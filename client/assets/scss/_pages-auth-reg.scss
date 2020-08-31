@@ -1,0 +1,14 @@
+.page-reg {
+  &__input-title {
+    display: block;
+    color: $gray3;
+    padding: 1rem 0;
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  input[type='submit'] {
+    margin-top: 3rem;
+  }
+}

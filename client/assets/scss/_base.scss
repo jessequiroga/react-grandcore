@@ -1,0 +1,25 @@
+// Сюда пихнуть всю типографику ещё
+
+*,
+*::before,
+*::after,
+body, html {
+  font-family: Inter;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding-top: $nav-height; // отступ от фиксированной шапки
+}
+
+@media only screen and (max-width: 990px) {
+  body {
+    padding-top: $nav-height-mb; // отступ от фиксированной шапки на mobile
+  }
+}
