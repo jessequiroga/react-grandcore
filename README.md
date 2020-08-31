@@ -1,7 +1,7 @@
 # GrandCore
 
-Чат проекта - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g 
-Параллельный проект на Vue - https://gitlab.com/grandcore/grandcore-front-vue
+- Чат проекта - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g 
+- Параллельный проект на Vue - https://gitlab.com/grandcore/grandcore-front-vue
 
 ## Quick start
 
