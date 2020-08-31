@@ -1,0 +1,195 @@
+.overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    &--hidden {
+        display: none;
+    }
+}
+
+.page-container {
+    padding: 0 18rem;
+}
+
+.nav {
+    // useless
+    height: $nav-height;
+    padding: 10px;
+}
+
+.item {
+    font-size: 18px;
+    color: unset;
+    cursor: pointer;
+    margin-left: 36px; // надо убрать
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: $green-dark;
+    background-color: $gray6;
+    cursor: pointer;
+    padding: 0.93333em;
+    border: none;
+    border-radius: $border-rad;
+    user-select: none;
+    font-weight: 600;
+
+    &--small {
+        display: block;
+        padding: inherit;
+        background-color: inherit;
+        border-radius: $border-rad;
+        z-index: 2;
+    }
+
+    &--big {
+        padding: 18px 30px 18px 30px;
+        font-size: 18px;
+    }
+
+    &--round {
+        border-radius: 50%;
+    }
+
+    &--green {
+        background-color: $green;
+        color: $green-dark;
+
+        &:hover {
+            background-color: lighten($green, 20%);
+        }
+    }
+
+    &--transparent {
+        background-color: transparentize($gray6, 0.7);
+
+        &:hover {
+            background-color: transparentize($gray6, 0.8);
+        }
+    }
+
+    &--width {
+        width: 100%;
+    }
+}
+
+.input {
+    padding: 1rem;
+    background: $gray6;
+    font-weight: 600;
+    font-size: 1rem;
+    color: $gray1;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+
+    &-field {
+        position: relative;
+
+        .input__label {
+            font-size: 1rem;
+            position: absolute;
+            left: 0;
+            top: 15%;
+            margin-left: 1.2rem;
+            margin-top: 0.7rem;
+            transition: 0.2s;
+            pointer-events: none;
+        }
+    }
+
+    &__sub {
+        display: block;
+        margin: 0.9rem 0 2rem;
+        text-align: right;
+        color: $gray1;
+        font-weight: 500;
+    }
+
+    &:focus,
+    &:valid {
+        outline: none;
+
+        &~label {
+            top: 0;
+            font-size: 0.7rem;
+        }
+    }
+
+    &--height {
+        padding: 1.5rem 1.2rem 1rem;
+    }
+}
+
+.img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.line-prev {
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: '';
+        width: 2rem;
+        height: 2px;
+        background: $gray4;
+        margin-right: 0.5rem;
+    }
+}
+
+.link {
+    &--after-row {
+        &:after {
+            display: inline-block;
+            margin-left: 0.5rem;
+            content: '>';
+            color: inherit;
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1679px) {
+    .page-container {
+        padding: 0 15rem;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .page-container {
+        padding: 0 8rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .page-container {
+        padding: 0 4rem;
+    }
+}
+
+@media only screen and (max-width: 652px) {
+    .btn--big {
+        margin: 0.2em;
+        font-size: 12px;
+    }
+
+    .page-container {
+        padding: 0 2rem;
+    }
+}
