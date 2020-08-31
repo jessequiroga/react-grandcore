@@ -1,0 +1,3 @@
+[submodule "grandcore-react"]
+	path = grandcore-react
+	url = git@gitlab.com:ahrorddin_kodirov/grandcore-react.git
