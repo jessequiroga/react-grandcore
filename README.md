@@ -1,7 +1,16 @@
 # GrandCore
 
-- Чат проекта - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g 
-- Параллельный проект на Vue - https://gitlab.com/grandcore/grandcore-front-vue
+*Первая в Мире Open Source корпорация. Универсальная платформа для любых открытых проектов*
+
+- Наш сайт - https://grandcore.org
+- Наши новости - https://t.me/grandcore_news
+- Публичный чат - https://t.me/grandcore_chat
+- Написать основателю - https://t.me/grandcore
+
+- Рабочий чат фронтендеров - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g 
+- Рабочий чат бекендеров -  https://t.me/joinchat/OQ6Da0w3cCxnfGl9K2Tv9g
+
+Вёрстка и API для MVP на бекенде уже готовы!
 
 ## Quick start
 
