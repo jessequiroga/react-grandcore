@@ -7,10 +7,15 @@
 - Публичный чат - https://t.me/grandcore_chat
 - Написать основателю - https://t.me/grandcore  **(если хотите в команду)**
 
+
 - Рабочий чат фронтендеров - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g 
 - Рабочий чат бекендеров -  https://t.me/joinchat/OQ6Da0w3cCxnfGl9K2Tv9g
 
+
+- Текущие макеты в Figma - https://www.figma.com/file/NlikNEJQHliYlxI3MHhiSW/Share?node-id=2946%3A1036
+- Репозиторий с компонентами и вёрсткой - https://gitlab.com/grandcore/stroika
 - Репозиторий бекенда на Python - https://gitlab.com/grandcore/grandcore-backend-python
+
 
 Вёрстка и API для MVP на бекенде уже готовы!
 
