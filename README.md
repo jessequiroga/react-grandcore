@@ -8,7 +8,7 @@
 - Написать основателю - https://t.me/grandcore  **(если хотите в команду)**
 
 
-- Рабочий чат фронтендеров - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g 
+- **Рабочий чат фронтендеров - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g** 
 - Рабочий чат бекендеров -  https://t.me/joinchat/OQ6Da0w3cCxnfGl9K2Tv9g
 
 
