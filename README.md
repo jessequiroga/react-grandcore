@@ -2,15 +2,14 @@
 
 *Первая в Мире Open Source корпорация. Универсальная платформа для любых открытых проектов*
 
+- Задачи в Trello - https://trello.com/b/6niwvQ5a/frontend
+- **Рабочий чат фронтендеров - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g** 
+- Рабочий чат бекендеров -  https://t.me/joinchat/OQ6Da0w3cCxnfGl9K2Tv9g
+
 - Наш сайт - https://grandcore.org
 - Наши новости - https://t.me/grandcore_news
 - Публичный чат - https://t.me/grandcore_chat
 - Написать основателю - https://t.me/grandcore  **(если хотите в команду)**
-
-
-- **Рабочий чат фронтендеров - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g** 
-- Рабочий чат бекендеров -  https://t.me/joinchat/OQ6Da0w3cCxnfGl9K2Tv9g
-
 
 - Текущие макеты в Figma - https://www.figma.com/file/NlikNEJQHliYlxI3MHhiSW/Share?node-id=2946%3A1036
 - Репозиторий с компонентами и вёрсткой - https://gitlab.com/grandcore/stroika
