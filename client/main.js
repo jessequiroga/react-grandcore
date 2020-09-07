@@ -8,6 +8,7 @@ import './assets/scss/main.scss'
 const target = document.getElementById('root')
 
 const render = (Component) => {
+  // debugger
   ;(module.hot ? ReactDOM.render : ReactDOM.hydrate)(
     <AppContainer>
       <Component />

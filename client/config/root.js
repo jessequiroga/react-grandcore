@@ -11,6 +11,7 @@ import Home from '../components/home'
 import NotFound from '../components/404'
 
 import Startup from './startup'
+// import Header from '../components/Header/Header'
 
 const OnlyAnonymousRoute = ({ component: Component, ...rest }) => {
   const func = (props) =>

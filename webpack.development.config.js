@@ -6,6 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const { v4: uuidv4 } = require('uuid')
+
 const eslintCacheIdentifier = JSON.stringify(fs.statSync('.eslintrc').mtimeMs)
 require('dotenv').config()
 
@@ -18,7 +19,8 @@ const config = {
     alias: {
       d3: 'd3/index.js',
       'react-dom': '@hot-loader/react-dom'
-    }
+    },
+    extensions: ['.js', '.jsx']
   },
   output: {
     filename: 'js/[name].bundle.js',
@@ -47,7 +49,7 @@ const config = {
         target: `http://localhost:${process.env.PORT || 8090}`,
         secure: false,
         changeOrigin: true,
-        ws: (process.env.ENABLE_SOCKETS || false)
+        ws: process.env.ENABLE_SOCKETS || false
       }
     ]
   },
@@ -55,7 +57,7 @@ const config = {
     rules: [
       {
         enforce: 'pre',
-        test: /\.js$/,
+        test: /\.(js|mjs|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         include: [/client/, /server/],
         loader: [
@@ -170,6 +172,8 @@ const config = {
       }
     ]
   },
+
+  
 
   plugins: [
     new webpack.optimize.ModuleConcatenationPlugin(),

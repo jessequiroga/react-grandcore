@@ -35,15 +35,18 @@
   },
   "rules": {
     "prettier/prettier": ["warn"],
+    "jsx-a11y/label-has-for": 0,
+    "no-console":"off",
     "space-before-function-paren": "off",
     "react/prefer-stateless-function": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "jsx-a11y/anchor-is-valid": "off",
-    "jsx-a11y/label-has-for": [ 2, {
-      "required": {
-        "every": [ "id" ]
-      }
-    }],
+    // "jsx-a11y/label-has-for": [ 2, {
+    //   "required": {
+    //     "every": [ "id" ],
+    //     "some": [ "nesting", "id" ]
+    //   }
+    // }],
     "jsx-a11y/label-has-associated-control": [ 2, {
       "labelComponents": ["CustomInputLabel"],
       "labelAttributes": ["label"],

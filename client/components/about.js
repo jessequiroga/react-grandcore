@@ -1,16 +1,19 @@
-import React from 'react'
-import Links from './auxiliaryСomponents/links'
+import React, { useEffect } from 'react'
+// import Links from './auxiliaryСomponents/links'
 
 const About = () => {
-  const arrLinks = [
-    { title: 'Информационные Каналы', links: ['Telegram канал', 'VK страница', 'YouTube канал'] },
-    {
-      title: 'Инструменты совместной работы',
-      links: ['Задачи Trello', 'Дизайн Figma', 'Код GitLab']
-    },
-    { title: 'Контакты', links: ['Telegram Основателя', 'VK Основателя', 'E-mail'] },
-    { title: 'Общение', links: ['Telegram чат', 'Discord Конференция'] }
-  ]
+  useEffect(() => {
+    // debugger
+  }, [])
+  // const arrLinks = [
+  //   { title: 'Информационные Каналы', links: ['Telegram канал', 'VK страница', 'YouTube канал'] },
+  //   {
+  //     title: 'Инструменты совместной работы',
+  //     links: ['Задачи Trello', 'Дизайн Figma', 'Код GitLab']
+  //   },
+  //   { title: 'Контакты', links: ['Telegram Основателя', 'VK Основателя', 'E-mail'] },
+  //   { title: 'Общение', links: ['Telegram чат', 'Discord Конференция'] }
+  // ]
   return (
     <div>
       <div className="page-about page-container">
@@ -20,7 +23,7 @@ const About = () => {
 
         {/* <!--
     При добавлении новых блоков, нужно указывать правельный id
-    Его можно увидеть в url наведя на ссылку соответствующего пункта в боковой панели
+    Его можно увидеть в url наведя на ссылку соответствующего пункта в боковой
   --> */}
 
         <div className="page-about-content" id="aboutTocSrc">
@@ -28,38 +31,10 @@ const About = () => {
             <p className="page-about-content-block__title">
               Прими участие в создании информационной и промышленной альтернативы!
             </p>
-            <div className="page-about-content-block__content">
-              {[0, 1, 2].map((nmb) => {
-                return (
-                  <p key={nmb}>
-                    Можно сказать, мы хотим стать одновременно и аналогом и антиподом таким
-                    транснациональным корпорациям как Google и Apple. Наша финансовая модель
-                    основана на краудфандинге, а решения будут приниматься с помощью продвинутых
-                    инструментов электронной демократии.
-                  </p>
-                )
-              })}
-              <p>
-                <b>
-                  <span className="accent--green">Сейчас мы делаем MVP.</span> По сути это будет
-                  каталог пранируемых проектов. Первое время на страницах проектов будет только блок
-                  обсуждения и описание с требованиями. Далее будут наращиваться остальные функции.
-                  Сделав MVP, мы создадим платформу для обсуждения и систематизации хотелок для Open
-                  Source проектов
-                </b>
-              </p>
-            </div>
+            <div className="page-about-content-block__content"> 1</div>
           </div>
 
-          <div className="page-about-content-block page-about-content-block--grid4">
-            {arrLinks.map(({ title, links }) => {
-              return (
-                <div key={title} className="page-about-content-block page-about-content-block--item">
-                  <Links title={title} arrayLinks={links} />
-                </div>
-              )
-            })}
-          </div>
+          <div className="page-about-content-block page-about-content-block--grid4">2</div>
 
           <div className="page-about-content-block" id="rannyaya-istoriya">
             <h2 className="page-about-content-block__title">Ранняя история</h2>

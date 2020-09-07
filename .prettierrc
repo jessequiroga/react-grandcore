@@ -5,5 +5,9 @@
   "semi": false,
   "singleQuote": true,
   "parser": "babel",
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "prettier/prettier": ["error", { 
+    "endOfLine":"auto"  
+  }],
+  "endOfLine":"auto"
  }

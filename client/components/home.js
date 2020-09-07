@@ -1,17 +1,21 @@
 import React from 'react'
 import Head from './head'
-import About from './about'
+// eslint-disable-next-line import/extensions
+import About from './About/About'
+import Header from './Header/Header'
 // import wave from '../assets/images/wave.jpg'
 
 const Home = () => {
   return (
     <div>
       <Head title="Hello" />
-      <About/>
+      <Header/>
+
+      <About />
     </div>
   )
 }
 
-Home.propTypes = {}
+// Home.propTypes = {}
 
 export default Home

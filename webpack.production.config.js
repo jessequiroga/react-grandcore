@@ -33,7 +33,8 @@ const config = {
   resolve: {
     alias: {
       d3: 'd3/index.js'
-    }
+    },
+    extensions: ['.js', '.jsx']
   },
   output: {
     filename: 'js/[name].bundle.js',
