@@ -1,6 +1,6 @@
 import React from 'react'
-
 import M from 'materialize-css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   console.log(M)
@@ -15,37 +15,37 @@ const Header = () => {
           />
         </div>
         <nav className="header-mobile-nav__nav">
-          <a className="header-mobile-nav__nav-item item" href="list.html">
+          <Link className="header-mobile-nav__nav-item item" to="/soft">
             <b>Софт</b>
-          </a>
-          <a className="header-mobile-nav__nav-item item" href="list.html">
+          </Link>
+          <Link className="header-mobile-nav__nav-item item" to="list.html">
             <b>Игры</b>
-          </a>
-          <a className="header-mobile-nav__nav-item item" href="list.html">
+          </Link>
+          <Link className="header-mobile-nav__nav-item item" to="list.html">
             <b>Сервисы</b>
-          </a>
-          <a className="header-mobile-nav__nav-item item" href="list.html">
+          </Link>
+          <Link className="header-mobile-nav__nav-item item" to="list.html">
             <b>Изделия</b>
-          </a>
-          <a className="header-mobile-nav__nav-item item" href="list.html">
+          </Link>
+          <Link className="header-mobile-nav__nav-item item" to="list.html">
             <b>Тексты</b>
-          </a>
+          </Link>
         </nav>
         <nav className="header-mobile-nav__nav">
-          <a className="header-mobile-nav__nav-item item" href="about.html">
+          <Link className="header-mobile-nav__nav-item item" to="about.html">
             О фонде
-          </a>
-          <a className="header-mobile-nav__nav-item item" href="donat.html">
+          </Link>
+          <Link className="header-mobile-nav__nav-item item" to="donat.html">
             Спонсоры
-          </a>
-          <a className="header-mobile-nav__nav-item item" href="users.html">
+          </Link>
+          <Link className="header-mobile-nav__nav-item item" to="users.html">
             Участники
-          </a>
+          </Link>
         </nav>
         <nav className="header-mobile-nav__nav">
-          <a href="auth-login.html" className="header-mobile-nav__signup-btn btn btn--green">
+          <Link to="auth-login.html" className="header-mobile-nav__signup-btn btn btn--green">
             Войти
-          </a>
+          </Link>
         </nav>
       </div>
 
@@ -58,8 +58,8 @@ const Header = () => {
                 <span />
                 <span />
               </div>
-              <svg>{/* <use xlink:href="#path"> */}</svg>
-              <svg>{/* <use xlink:href="#path"> */}</svg>
+              <svg>{/* <use xlink:to="#path"> */}</svg>
+              <svg>{/* <use xlink:to="#path"> */}</svg>
             </div>
           </label>
 
@@ -70,38 +70,38 @@ const Header = () => {
           </svg> */}
         </div>
         <div className="header-left">
-          <a className="header-left__logo" href="index.html">
-            {/* я задоблабался исправлять эту проблему, решил её так */} 
-          </a>
+          <Link className="header-left__logo" to="/">
+            {/* я задоблабался исправлять эту проблему, решил её так */}
+          </Link>
           <nav className="header-left__nav nav">
-            <a className="header-left__nav-item item" href="list.html">
+            <Link className="header-left__nav-item item" to="/soft">
               Софт
-            </a>
-            <a className="header-left__nav-item item" href="list.html">
+            </Link>
+            <Link className="header-left__nav-item item" to="/game">
               Игры
-            </a>
-            <a className="header-left__nav-item item" href="list.html">
+            </Link>
+            <Link className="header-left__nav-item item" to="/service">
               Сервисы
-            </a>
-            <a className="header-left__nav-item item" href="list.html">
+            </Link>
+            <Link className="header-left__nav-item item" to="/product">
               Изделия
-            </a>
-            <a className="header-left__nav-item item" href="list.html">
+            </Link>
+            <Link className="header-left__nav-item item" to="/text">
               Тексты
-            </a>
+            </Link>
           </nav>
         </div>
         <div className="header-right">
           <nav className="header-right__nav">
-            <a className="header-right__nav-item item" href="about.html">
+            <Link className="header-right__nav-item item" to="/">
               О фонде
-            </a>
-            <a className="header-right__nav-item item" href="donat.html">
+            </Link>
+            <Link className="header-right__nav-item item" to="/donat">
               Спонсоры
-            </a>
-            <a className="header-right__nav-item item" href="users.html">
+            </Link>
+            <Link className="header-right__nav-item item" to="/users">
               Участники
-            </a>
+            </Link>
           </nav>
           <div className="header-right-btns">
             <div className="header-right-btns__search">
@@ -132,9 +132,9 @@ const Header = () => {
               id="search-btn"
               type="button"
             />
-            <a href="auth-login.html" className="header-right-btns__signup-btn btn btn--green">
+            <Link to="/auth-login" className="header-right-btns__signup-btn btn btn--green">
               Войти
-            </a>
+            </Link>
           </div>
         </div>
       </header>

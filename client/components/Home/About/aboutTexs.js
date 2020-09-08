@@ -2,7 +2,7 @@ export default [
   {
     title: 'Коротко о фонде',
     className: '',
-    nID: '1',
+    nID: 1,
     id: 'korotko-o-fonde',
     divClassName: 'page-about-content-block--grid4',
     text: [
@@ -28,7 +28,7 @@ export default [
   {
     title: 'Основные концепции',
     id: 'osnovnye-koncepcii',
-    nID: '2',
+    nID: 2,
 
     text: [
       {
@@ -53,7 +53,7 @@ export default [
   {
     title: 'Текущее состояние проекта',
     id: 'tekushee-sostoyanie-proekta',
-    nID: '3',
+    nID: 3,
     text: [
       {
         text: 'tekushee-sostoyanie-proekta'
@@ -76,6 +76,8 @@ export default [
   {
     title: 'Дорожная Карта',
     id: 'dorozhnaya-karta',
+    nID: 4,
+
     text: [
       {
         text: 'dorozhnaya-karta'
@@ -98,6 +100,8 @@ export default [
   {
     title: 'MVP',
     id: 'mvp',
+    nID: 5,
+
     text: [
       {
         text: 'mvp'
@@ -120,6 +124,8 @@ export default [
   {
     title: 'Внедрение Бизнес-Процессов',
     id: 'vnedrenie-biznes-processovless',
+    nID: 6,
+
     text: [
       {
         text: 'vnedrenie-biznes-processovless'
