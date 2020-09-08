@@ -71,7 +71,7 @@ const Header = () => {
         </div>
         <div className="header-left">
           <a className="header-left__logo" href="index.html">
-            {/* я задоблабался исправлять эту проблему, решил её так */} 1
+            {/* я задоблабался исправлять эту проблему, решил её так */} 
           </a>
           <nav className="header-left__nav nav">
             <a className="header-left__nav-item item" href="list.html">
