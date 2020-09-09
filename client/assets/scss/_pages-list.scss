@@ -3,7 +3,7 @@
         display: block;
         z-index: 0;
         &-list-header {
-            background: url(../images/list_header.png) no-repeat;
+            background: url(../img/list_header.png) no-repeat;
             background-size: cover;
             width: 100%;
             height: 18.75rem;
@@ -48,7 +48,7 @@
             background-color: $gray6;
             width: 100%;
             padding: 5rem 18.75rem;
-            &-sidebar {
+            &-sidebar {    
                 position: relative;
                 display: block;
                 max-width: 12rem;
@@ -80,7 +80,7 @@
                         padding: 1.375rem 0rem 0rem 0rem;
                         line-height: 100%;
                         color: $gray2;
-                        // background: url("../../img/list-marker.svg") 1rem no-repeat;
+                        // background: url("../img/list-marker.svg") 1rem no-repeat;
                         list-style-type: none;
                         ul {
                             font-weight: normal;
@@ -123,7 +123,7 @@
                             border-radius: 4px;
                             display: flex;
                             &-icon {
-                                background: url(../images/search.svg);
+                                background: url(../img/search.svg);
                                 width: 20px;
                                 height: 20px;
                                 margin-right: 0.6rem;
@@ -136,7 +136,7 @@
                                 font-style: normal;
                                 font-size: 16px;
                                 line-height: 100%;
-                                color: $gray2;
+                                color: $gray2;                               
                             }
                         }
                     }
@@ -149,7 +149,7 @@
                             border-radius: 4px;
                             display: flex;
                             &-icon {
-                                background: url(../images/settings.svg) no-repeat;
+                                background: url(../img/settings.svg) no-repeat;
                                 width: 20px;
                                 height: 20px;
                                 margin-left:2px;
@@ -160,7 +160,7 @@
                                 font-style: normal;
                                 font-size: 16px;
                                 line-height: 100%;
-                                color: $gray2;
+                                color: $gray2;                            
                             }
                         }
                     }
@@ -174,7 +174,7 @@
                             border-radius: 4px;
                             display: flex;
                             &-icon {
-                                background: url(../images/menu.svg) no-repeat;
+                                background: url(../img/menu.svg) no-repeat;
                                 width: 20px;
                                 height: 20px;
                                 margin-right:0.6rem;
@@ -184,7 +184,7 @@
                                 font-style: normal;
                                 font-size: 16px;
                                 line-height: 100%;
-                                color: $gray2;
+                                color: $gray2;                            
                             }
                         }
                     }
@@ -221,7 +221,7 @@
                                 object-fit: cover;
                             }
                             //
-
+                            
                         }
                         &-inside {
                             margin: 0 0 0 0;
@@ -350,7 +350,7 @@
                     z-index: 9;
                     left: 0;
                 }
-            }
+            }   
         }
     }
 }
@@ -444,7 +444,7 @@
                         grid-gap: 20px;
                     }
                 }
-            }
+            } 
         }
     }
 }
@@ -539,7 +539,7 @@
                         grid-gap: 20px;
                     }
                 }
-            }
+            } 
         }
     }
 }

@@ -6,13 +6,13 @@
         width: $about-aside-width;
         position: fixed;
         ol, ul {
-            list-style: none;
+            list-style: none; 
             counter-reset: li;
             margin-left: 1.2rem;
             li {
                 margin: 1.2rem 0;
                 color: $gray1;
-
+                
                 a {
                     color: $gray3;
                     font-weight: 300;
@@ -25,11 +25,11 @@
                 }
 
                 &:before {
-                    counter-increment: li;
-                    content: counters(li,".") " ";
+                    counter-increment: li; 
+                    content: counters(li,".") " "; 
                 }
 
-
+                
             }
         }
     }
@@ -114,7 +114,7 @@
             width: 100%;
             margin-top: 0;
             margin-bottom: 1.2rem;
-
+            
             ol {
                 li {
                     margin: 0.9rem 0;
@@ -136,7 +136,7 @@
         padding: 0 1rem;
         margin-top: 4.5rem;
         flex-direction: column;
-
+        
         &-content {
             &-block {
                 $self: &;
@@ -154,7 +154,7 @@
                     #{$self} {
                         width: 100%;
                         text-align: center;
-                        &__content{
+                        &__content{ 
                             a {
                                 margin-bottom: 0.5rem;
                             }

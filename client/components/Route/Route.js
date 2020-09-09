@@ -19,8 +19,9 @@ const CustomRoute = () => {
         <Route exact path="/product" component={() => <Product />} />
         <Route exact path="/soft" component={() => <Soft />} />
         <Route exact path="/game" component={() => <Game />} />
-        <Route exact path="/donate" component={() => <Donate />} />
-        <Route exact path="/auth" component={() => <Auth />} />
+        <Route exact path="/donat" component={() => <Donate />} />
+        <Route path="/login-auth" component={() => <Auth uri="login" />} />
+        <Route path="/reg-auth" component={() => <Auth uri="reg" />} />
         <Route exact path="/service" component={() => <Service />} />
         <Route exact path="/text" component={() => <Text />} />
         <Route exact path="/users" component={() => <Users />} />

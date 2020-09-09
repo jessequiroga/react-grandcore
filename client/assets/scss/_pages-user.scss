@@ -19,7 +19,7 @@
     }
 
     &__img {
-      background: url(../images/page-user/page-user-avatar.jpg) no-repeat;
+      background: url(../img/page-user/page-user-avatar.jpg) no-repeat;
       min-width: 192px;
       width: 192px;
       height: 192px;
@@ -183,7 +183,7 @@
         color: inherit;
         }
       }
-    }
+    } 
 }
 
 
@@ -218,7 +218,7 @@
     &-btn {
       justify-content: center;
     }
-  }
+  } 
 }
 
 @media only screen and (max-width: 911px) {

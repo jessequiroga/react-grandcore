@@ -1,4 +1,4 @@
-// Футер вроде норм, а у хедера как-то странно с классами базовыми у планшета и моб вёрстки. Давайте всем делать базовый класс, что бы не было коллизий.
+// Футер вроде норм, а у хедера как-то странно с классами базовыми у планшета и моб вёрстки. Давайте всем делать базовый класс, что бы не было коллизий. 
 
 .header {
     display: flex;
@@ -13,6 +13,34 @@
     z-index: 5;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
 
+    &-right__avlogin {
+        box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, 0.5);
+        display: none;
+        position: absolute;
+        right: 40px;
+        justify-content: space-between;
+        align-items: left;
+        flex-direction: column;
+        top: 100px;
+        background-color: $gray6;
+        padding: 10px 20px;
+        border-radius: $border-rad;
+        &-item {
+            display: block;
+            margin: 8px 0px;
+            text-align: left;
+            &-sep {
+                background: #000;
+                height: 0.5px;
+                margin: 8px 0px;
+            }
+        }
+
+        &--active {
+            display: flex;
+        }
+    }
+    
     &-left {
         display: inherit;
         align-items: inherit;
@@ -31,7 +59,7 @@
                 font-weight: $nav-left-fw;
                 color: $gray1;
             }
-        }
+        }      
     }
 
     &-mobile-nav {
@@ -42,7 +70,7 @@
         height: 100vh;
         width: 85vw;
         background-color: $white;
-        transition: .2s;
+        transition: .2s; 
         &__nav {
             display: flex;
             flex-direction: column;
@@ -54,9 +82,10 @@
                 color: $gray1;
             }
         }
-        &__signup-btn {
-            width: 103px;
-            height: 48px;
+        &__avlogin{
+            height: 64px;
+            width: 64px;
+            border-radius: 50%;
         }
         &__close {
             display: flex;
@@ -74,7 +103,7 @@
                 &::after {
                     display: block;
                     content: '';
-                    background: url(../images/close.svg);
+                    background: url(../img/close.svg);
                     background-repeat: no-repeat;
                     width: 16px;
                     height: 16px;
@@ -84,7 +113,7 @@
         &--hidden {
             left: -100vw;
         }
-    }
+    }  
 
     &-right {
         display: inherit;
@@ -108,13 +137,20 @@
             display: inherit;
             align-items: inherit;
             margin-left: 18px;
+            &-avlogin {
+                display: block;
+                height: 48px;
+                width: 48px;
+                margin-left: 16px;
+                border-radius: 50%;
+            }
             &__more-btn {
                 display: none;
                 padding: 1rem 0.6rem;
                 &::after {
                     display: block;
                     content: '';
-                    background: url(../images/more.svg);
+                    background: url(../img/more.svg);
                     background-repeat: no-repeat;
                     width: 18px;
                     height: 4px;
@@ -131,7 +167,7 @@
                 &-field {
                     font-weight: normal;
                     font-size: 16px;
-                    border: none;
+                    border: none; 
                     background-color: $gray6;
                     width: calc(344px - 20px);
                 }
@@ -146,9 +182,9 @@
                 &::after {
                     display: block;
                     content: '';
-                    background: url(../images/search.svg);
+                    background: url(../img/search.svg);
                     background-size: 24.4px;
-                    height: 24.4px;
+                    height: 24.4px; 
                     width: 24.4px;
                     z-index: 3;
                 }
@@ -158,7 +194,7 @@
                 }
                 &--hide {
                     display: none;
-                }
+                } 
             }
             &__close-btn {
                 border: none;
@@ -166,15 +202,12 @@
                 &::after {
                     display: block;
                     content: '';
-                    background: url(../images/close.svg);
+                    background: url(../img/close.svg);
                     background-size: 20px;
-                    height: 20px;
+                    height: 20px; 
                     width: 20px;
                     z-index: 3;
                 }
-            }
-            &__signup-btn {
-                margin-left: 16px;
             }
         }
     }
@@ -337,19 +370,20 @@
             display: block;
             padding: 1rem 0.6rem;
         }
-
+    
         &-right-btns__search {
             position: fixed;
             top: 100px;
             left: 2%;
             width: 96%;
-
+    
             #search-field {
                 width: inherit;
             }
         }
-
+    
         &-right__nav {
+            box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, 0.5);
             display: none;
             position: absolute;
             justify-content: space-between;
@@ -364,12 +398,12 @@
                 margin: 8px 0px;
                 text-align: left;
             }
-
+    
             &--active {
                 display: flex;
             }
         }
-
+    
         &-left__nav {
             margin-left: 10px;
         }
@@ -408,6 +442,9 @@
             }
         }
         &-right-btns {
+            &-avlogin {
+                display: none;
+            }
             &__signup-btn {
                 display: none;
             }
@@ -419,7 +456,7 @@
         #search-btn {
             background-color: white;
         }
-
+    
         #search-btn.header-right-btns__search-btn--hide {
             display: block;
             opacity: 0;

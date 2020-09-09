@@ -185,7 +185,7 @@ const config = {
     new CopyWebpackPlugin(
       {
         patterns: [
-          { from: `${__dirname}/client/assets/images`, to: 'images' },
+          { from: `${__dirname}/client/assets/img`, to: 'img' },
           { from: `${__dirname}/client/assets/fonts`, to: 'fonts' },
 
           { from: `${__dirname}/client/assets/sitemap.xml`, to: 'sitemap.xml' },

@@ -1,18 +1,18 @@
 @mixin logo () {
     display: inherit;
     align-items: inherit;
-
+    
     &::before {
         display: block;
         content: '';
-        background: url(../images/logo.svg);
+        background: url(../img/logo.svg);
         width: 45px;
         height: 38px
     }
     &::after {
         display: block;
         content: '';
-        background: url(../images/logo-label.svg);
+        background: url(../img/logo-label.svg);
         width: 60px;
         height: 35px;
         margin-left: 13px;

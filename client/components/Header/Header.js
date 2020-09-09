@@ -132,7 +132,7 @@ const Header = () => {
               id="search-btn"
               type="button"
             />
-            <Link to="/auth-login" className="header-right-btns__signup-btn btn btn--green">
+            <Link to="/login-auth" className="header-right-btns__signup-btn btn btn--green">
               Войти
             </Link>
           </div>

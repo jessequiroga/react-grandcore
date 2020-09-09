@@ -1,0 +1,279 @@
+.page-user-edit {
+    padding-top: 5rem;
+    padding-bottom: 25rem;
+  
+    background-color: $gray6;
+    &-container {
+      padding: 0 18rem;
+    }
+    // block
+    &-profile {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      &_bottom {
+        margin-bottom: 83px;
+      }
+      &__user-wrap {
+        width: 378px;
+      }
+  
+      &__img {
+        background: url(../img/page-user/page-user-avatar.jpg) no-repeat;
+        min-width: 192px;
+        width: 192px;
+        height: 192px;
+        margin-right: 60px;
+        border-radius: 50%;
+      }
+  
+      &__title {
+        font-size: 30px;
+        color: $gray1;
+        line-height: 36px;
+        margin-bottom: 8px;
+      }
+  
+      &__skills {
+        font-size: 16px;
+        color: $gray3;
+        line-height: 140%;
+        margin-bottom: 23px;
+      }
+    }
+    // status component
+    &-status {
+      display: flex;
+      flex-wrap: wrap;
+      &__rank {
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+        font-size: 18px;
+        color: $green;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+        cursor: pointer;
+        &-icon {
+          margin-right: 7px;
+        }
+      }
+      &__rating {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      &_bottom {
+        margin-bottom: 14px;
+      }
+    }
+  // btn component
+    &-btn {
+      display: flex;
+      flex-wrap: wrap;
+      &__edit {
+        color: $gray1;
+        padding: 14px 24px;
+        font-size: 16px;
+        border: none;
+        background-color: $white-bg;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 500;
+        margin-right: 16px;
+      }
+      &__message {
+        color: $gray1;
+        padding: 14px 24px;
+        font-size: 16px;
+        border: none;
+        background-color: $white-bg;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        max-width: 204px;
+        cursor: pointer;
+        &_telegram {
+          margin-right: 10px;
+        }
+      }
+    }
+    // Projects
+    &-projects {
+      &_container {
+        padding: 0 18rem;
+      }
+      // project menu
+      &-menu {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 4.375em;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background-color: $gray5;
+          top: 140%;
+        }
+        &__item {
+          list-style-type: none;
+          margin-right: 64px;
+        }
+        &__link {
+          text-decoration: none;
+          color: $gray3;
+          font-size: 18;
+          font-weight: 500;
+          line-height: 150%;
+          &_active {
+            color: $gray1
+          }
+        }
+      }
+      &-edit {
+        &-grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 20px;
+            &-c2 {
+                margin-top: 0px;
+                &-loadimage {
+                    display: flex;
+                    margin-top: 40px;
+                    height: 60px;
+                    padding: 1rem;
+                    background: $gray5;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    color: #333;
+                    border: none;
+                    border-radius: 8px;
+                    &-text {
+                        margin: auto auto auto 0;
+                        font-style: normal;
+                        font-size: 16px;
+                        line-height: 100%;
+                        color: #4f4f4f;
+                    }
+                }
+            }
+        } 
+        &-field {
+            border-radius: 4px;
+            display: flex;
+            &-input {
+                resize: none;
+                width: 100%;
+                min-height: 12.5rem;
+                padding: 0.1rem;
+                border-radius: 8px;
+                padding: 1.5rem 1.2rem 1rem;
+                background-color: $gray5;
+                border: none;
+                font-style: normal;
+                font-size: 16px;
+                line-height: 100%;
+                color: #4f4f4f;                               
+            }
+        }
+      }
+    }
+  }
+
+    .input {
+        background: $gray5;
+    }
+  
+  
+  @media (max-width: 1480px) {
+    .page-user-edit-container {
+      padding: 0 8rem;
+    }
+  }
+  
+  @media (max-width: 886px) {
+    .page-user-edit {
+      padding-bottom: 5rem;
+      &-projects {
+        &-edit {
+          &-grid {
+              display: grid;
+              grid-template-columns: auto;
+              grid-column-gap: 20px;
+              &-c2 {
+                  margin-top: 40px;
+              }
+          }
+        }
+      }
+      &-container {
+        padding: 0 8rem;
+      }
+      &-profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &__img {
+          margin-right: 0px;
+          margin-bottom: 10px;
+        }
+        &__user-wrap {
+          width: 100%;
+        }
+      }
+      // status component
+      &-status {
+        justify-content: center;
+      }
+      &-btn {
+        justify-content: center;
+      }
+    } 
+  }
+  
+  @media only screen and (max-width: 911px) {
+    .page-user-edit-projects-menu {
+      &__item {
+        margin-right: 28px;
+      }
+      // flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 610px) {
+    .page-user-edit {
+      &-projects {
+        &-edit {
+          &-grid {
+              display: grid;
+              grid-template-columns: auto;
+              grid-column-gap: 20px;
+              &-c2 {
+                  margin-top: 40px;
+              }
+          }
+        }
+      }
+      &-container {
+        padding: 0 2rem;
+      }
+      &-btn {
+        &__edit {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+        &__message {
+          min-width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  
+  
