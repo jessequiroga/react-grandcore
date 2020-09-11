@@ -33,7 +33,8 @@ const config = {
   resolve: {
     alias: {
       d3: 'd3/index.js'
-    }
+    },
+    extensions: ['.js', '.jsx']
   },
   output: {
     filename: 'js/[name].bundle.js',
@@ -192,7 +193,7 @@ const config = {
     new CopyWebpackPlugin(
       {
         patterns: [
-          { from: 'assets/images', to: 'images' },
+          { from: 'assets/img', to: 'img' },
           { from: 'assets/fonts', to: 'fonts' },
 
           { from: 'assets/sitemap.xml', to: 'sitemap.xml' },

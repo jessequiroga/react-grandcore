@@ -11,16 +11,15 @@ import config from './config'
 import Html from '../client/html'
 
 const Root = () => ''
-
+// console.log()
 try {
   // eslint-disable-next-line import/no-unresolved
-  // ;(async () => {
-  //   const items = await import('../dist/assets/js/root.bundle')
-  //   console.log(JSON.stringify(items))
-
-  //   Root = (props) => <items.Root {...props} />
-  //   console.log(JSON.stringify(items.Root))
-  // })()
+  ;(async () => {
+    // const items = await import('../dist/assets/js/root.bundle')
+    // console.log(JSON.stringify(items))
+    // Root = (props) => <items.Root {...props} />
+    // console.log(JSON.stringify(items.Root))
+  })()
   console.log(Root)
 } catch (ex) {
   console.log(' run yarn build:prod to enable ssr')

@@ -3,14 +3,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'connected-react-router'
-import { Switch, Route, Redirect, StaticRouter } from 'react-router-dom'
+import { Route, Redirect, StaticRouter, BrowserRouter } from 'react-router-dom'
 
 import store, { history } from '../redux'
 
-import Home from '../components/home'
-import NotFound from '../components/404'
-
 import Startup from './startup'
+import Header from '../components/Header/Header'
+import CustomRoute from '../components/Route/Route'
 
 const OnlyAnonymousRoute = ({ component: Component, ...rest }) => {
   const func = (props) =>
@@ -55,7 +54,8 @@ const defaults = {
   user: null,
   token: ''
 }
-
+// const a = CustomRoute
+// console.log(a)
 OnlyAnonymousRoute.propTypes = types
 PrivateRoute.propTypes = types
 
@@ -67,16 +67,17 @@ const RouterSelector = (props) =>
 
 const RootComponent = (props) => {
   return (
-    <Provider store={store}>
-      <RouterSelector history={history} location={props.location} context={props.context}>
-        <Startup>
-          <Switch>
-            <Route exact path="/" component={() => <Home />} />
-            <Route component={() => <NotFound />} />
-          </Switch>
-        </Startup>
-      </RouterSelector>
-    </Provider>
+    <BrowserRouter>
+      <Provider store={store}>
+        <RouterSelector history={history} location={props.location} context={props.context}>
+          <Startup>
+            <Header />
+
+            <CustomRoute />
+          </Startup>
+        </RouterSelector>
+      </Provider>
+    </BrowserRouter>
   )
 }
 

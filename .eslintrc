@@ -35,15 +35,19 @@
   },
   "rules": {
     "prettier/prettier": ["warn"],
+    "jsx-a11y/label-has-for": 0,
+    "no-console":"off",
+    "no-debugger":"off",
     "space-before-function-paren": "off",
     "react/prefer-stateless-function": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "jsx-a11y/anchor-is-valid": "off",
-    "jsx-a11y/label-has-for": [ 2, {
-      "required": {
-        "every": [ "id" ]
-      }
-    }],
+    // "jsx-a11y/label-has-for": [ 2, {
+    //   "required": {
+    //     "every": [ "id" ],
+    //     "some": [ "nesting", "id" ]
+    //   }
+    // }],
     "jsx-a11y/label-has-associated-control": [ 2, {
       "labelComponents": ["CustomInputLabel"],
       "labelAttributes": ["label"],
@@ -73,7 +77,8 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/no-array-index-key": "warn",
-    "jsx-a11y/control-has-associated-label": "warn",
+    // change warn -> off
+    "jsx-a11y/control-has-associated-label": "off",
     "jsx-a11y/no-autofocus": "warn",
     "max-classes-per-file": "warn",
     "react/jsx-props-no-spreading": ["off"],

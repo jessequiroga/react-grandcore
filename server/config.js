@@ -6,5 +6,5 @@ const options = {
   env: process.env.NODE_ENV,
   isSocketsEnabled: process.env.ENABLE_SOCKETS
 }
-
+console.log(options)
 export default options
