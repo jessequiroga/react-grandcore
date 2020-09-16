@@ -16,7 +16,7 @@
 
 *Первая в Мире Open Source корпорация. Универсальная платформа для любых открытых проектов*
 
-- Задачи в Trello - https://trello.com/b/6niwvQ5a/frontend
+- Задачи в Trello - https://trello.com/b/K73NeI1B/grandcore-front-react
 - **Рабочий чат фронтендеров - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g** 
 - Рабочий чат бекендеров -  https://t.me/joinchat/OQ6Da0w3cCxnfGl9K2Tv9g
 
