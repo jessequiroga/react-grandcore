@@ -1,37 +1,3 @@
-# Быстрое описание
-
-*Стркутура*
-
-- гл.файл - root.js
-
-
-*Беды*
-
-- настройка вебпака, настройка eslint+prettier сразу же под прод
-- при запуске yarn dev на localhost:8090 непонятно откуда берётся фронт, хотя он запускает wath:client который работает на 8087 прекрасно 
-- довольно не понятная для меня структура проекта(можно сказать не базовая для фуллстек проектов на реакт+нода)
-
-
-# GrandCore
-
-*Первая в Мире Open Source корпорация. Универсальная платформа для любых открытых проектов*
-
-- Задачи в Trello - https://trello.com/b/K73NeI1B/grandcore-front-react
-- **Рабочий чат фронтендеров - https://t.me/joinchat/OQ6DaxmA5Xf7GERw8oZO8g** 
-- Рабочий чат бекендеров -  https://t.me/joinchat/OQ6Da0w3cCxnfGl9K2Tv9g
-
-- Наш сайт - https://grandcore.org
-- Наши новости - https://t.me/grandcore_news
-- Публичный чат - https://t.me/grandcore_chat
-- Написать основателю - https://t.me/grandcore  **(если хотите в команду)**
-
-- Текущие макеты в Figma - https://www.figma.com/file/NlikNEJQHliYlxI3MHhiSW/Share?node-id=2946%3A1036
-- Репозиторий с компонентами и вёрсткой - https://gitlab.com/grandcore/stroika
-- Репозиторий бекенда на Python - https://gitlab.com/grandcore/grandcore-backend-python
-
-
-Вёрстка и API для MVP на бекенде уже готовы!
-
 ## Quick start
 
 1. Clone this repo using:
